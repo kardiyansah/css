@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            /* explicit and implicit grid */
+            /* grid-auto-flow: column; */
+            /* expicit grid */
+            /* values: px, fr, %, auto */
+            grid-template-columns: [c-start] 1fr [c2] 1fr [c3] 1fr [c-end];
+            grid-template-rows: 50px 100px 150px;
+            /* implicit grid */
+            /* grid-auto-rows: 70px; */
+            grid-auto-columns: auto;
+        }
+
+        .item {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: salmon;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    
+</body>
+</html>

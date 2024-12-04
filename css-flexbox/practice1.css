@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* menggunkan float */
+/* .container {
+    width: 80%;
+    border: 5px solid #333;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.items {
+    float: left;
+    width: 20%;
+    height: 120px;
+    background-color: rgb(168, 168, 255);
+} */
+ /* end of menggunakan float */
+
+
+ .container {
+    width: 80%;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    /* values: row | row-reverse | column | column-reverse; */
+    /* flex-direction: column-reverse; */
+    /* values: nowrap(default) | wrap | wrap-reverse; */
+    flex-wrap: wrap;
+    /* values: flex-start(default) | flex-end | center | space-between | space-around | space-evenly */
+    /* justify-content: center; */
+    /* values: flex-start | flex-end | center | stretch | baseline */
+    /* align-items: flex-start; */
+    /* values: flex-start | flex-end | center | stretch | space-between | space-around | space-evenly */
+    /* hanya berlaku jika items lebih dari 1 row */
+    /* align-content: space-between; */
+    /* shorthand untuk justify-content and align-items */
+    /* place-content: center space-around; */
+}
+
+/* .container div.three {
+    font-size: 3em;
+}
+
+.container div.one {
+    font-size: 5em;
+} */
+
+.items {
+    transition: all .6s ease-in-out;
+    margin: 3px;
+    flex-grow: 1;
+    background-color: rgb(168, 168, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items.three {
+    /* order digunakan untuk mengatur urutan pada items */
+    order: -1;
+    /* values: flex-start | flex-end | center | stretch | baseline */
+    align-self: center;
+}
+
+.items.one { order: 3; }
+.items.two { order: 4; }
+.items.four{ order: 2; }
+
+/* > * digunakan untuk mentarget semua childsnya */
+.container > *:hover {
+    /* digunakan untuk menambah size pada items and shorthandnya adalah flex */
+    flex-grow: 1.8;
+}

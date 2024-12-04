@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* practice -1 */
+.container-one {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main-column {
+    flex: 3;
+}
+
+.sidebar-one {
+    flex: 1;
+    order: -1;
+}
+
+.sidebar-two {
+    flex: 1;
+}
+/* end of practice -1 */
+
+
+/* practice -2 */
+.container-two {
+    width: 90%;
+    margin: 50px auto;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    display: block;
+}
+
+.service {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.service.one { background-color: limegreen; }
+.service.two { background-color: violet; }
+.service.three { background-color: salmon; }
+/* end of practice -2 */
+
+
+/* practice -3 */
+.container-three {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.thumbnail {
+    margin: 5px;
+    width: 45%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+/* end of practice -3 */
+
+
+/* practice -4 */
+.container-four {
+    width: 90%;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #aaa;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #666;
+    height: 150px;
+}
+
+.card-content {
+    text-align: center;
+    padding: 15px;
+}
+/* end of practice -4 */
+
+
+/* practice -5 */
+.container-five {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 3px solid #333;
+    background-color: #fff;
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.box span {
+    margin: auto;
+}
+/* end of practice -5 */
+
+
+/* responsive breakpoint */
+@media( min-width: 576px ) {
+    .container-two {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 23%;
+    }
+
+    .container-four {
+        display: flex;
+    }
+
+    .card.big {
+        scale: 1.15;
+    }
+}
+/* end of responsive breakpoint */

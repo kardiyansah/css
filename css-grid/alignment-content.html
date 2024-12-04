@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Items</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            height: 500px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 20%);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            box-sizing: border-box;
+            border: 3px solid #333;
+            /* justify-content: start | end | center | stretch | space-between | space-around | space-evenly; */
+            /* justify-content: space-between; */
+            /* align-content: start | end | center | stretch | space-between | space-around | space-evenly; */
+            /* align-content: space-evenly; */
+            /* place-content adalah shorthand untuk justify-content and align-content */
+            /* place-content: align-content justify-content; */
+            place-content: center space-between;
+        }
+
+        .items {
+            border: 3px solid #555;
+            height: 50px;
+            background-color: lightskyblue;
+        }
+
+        .items.i1, .items.i4, .items.i7 {
+            width: 75%;
+        }
+
+        .items.i2, .items.i5, .items.i8 {
+            width: 40%;
+        }
+
+        .items.i3, .items.i6, .items.i9 {
+            width: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="items i1">1</div>
+        <div class="items i2">2</div>
+        <div class="items i3">3</div>
+        <div class="items i4">4</div>
+        <div class="items i5">5</div>
+        <div class="items i6">6</div>
+        <div class="items i7">7</div>
+        <div class="items i8">8</div>
+        <div class="items i9">9</div>
+    </div>
+
+</body>
+</html>

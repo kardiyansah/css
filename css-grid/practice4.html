@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Function</title>
+    <!-- repeat(loop, size), min-content, max-content, auto-fill, auto-fit, minmax(minsize, maxsize) -->
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            border: 3px solid #777;
+            /* grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr); */
+            /* grid-template-columns: 1fr max-content 1fr; */
+            /* grid-template-columns: repeat(auto-fit, 150px); */
+            /* grid-template-columns: 1fr minmax(300px, 400px) 1fr; */
+            /* justify-content: center; */
+        }
+
+        .item {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: salmon;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">John Doe</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+</html>

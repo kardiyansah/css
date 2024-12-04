@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property For Grid Items</title>
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: [c-start] 2fr [c2] 1fr [c3] 1fr [c-end];
+            grid-template-rows: [r-start] 100px [r2] 100px [r3] 100px [r-end];
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item.my-item {
+            /* grid-column: 2 / 4;
+            grid-row: 2/ 4; */
+
+            /* grid-column: 1 / span 2;
+            grid-row: 1 / span 2; */
+
+            /* grid-column: c-start / c-end;
+            grid-row: r-start / r-end; */
+
+            /* grid-column: -1 / -2;
+            grid-row: -4 / -1; */
+
+            /* grid-area: row-start / column-start / row-end / column-end; */
+            /* grid-area: 2 / 1 / 4 / 3; */
+
+            /* justify-self: start | end | center | stretch(default); */
+            /* justify-self: stretch; */
+
+            /* align-self: start | end | center | stretch(default); */
+            /* align-self: center; */
+
+            /* place-self adalah shorthand untuk justify-self and align-self */
+            /* place-self: align-self justify-self; */
+            /* place-self: stretch; */
+
+            background-color: lightskyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item my-item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <!-- <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+    
+</body>
+</html>
