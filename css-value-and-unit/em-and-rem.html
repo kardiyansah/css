@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem and Em</title>
+  </head>
+  <style>
+    /* :root {
+      font-size: 10px;
+    } */
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .typography {
+      display: flex;
+    }
+
+    .typography .col {
+      flex-grow: 1;
+      margin: 0 0.5em;
+      padding: 0 0.5em;
+    }
+
+    /* col-em */
+    .col-em {
+      font-size: 10px;
+    }
+
+    .col-em h2 {
+      /* em relatif terhadap ukuran font pembungkusnya / parent */
+      /* em nilai defaultnya adalah 16px */
+      font-size: 2em;
+    }
+
+    .col-em p {
+      font-size: 1.5em;
+    }
+    /* end col-em */
+
+    /* col-rem */
+    .col-rem h2 {
+      /* rem ralatif terhadap ukuran font root / html, and dafaultnya 16px */
+      font-size: 2rem;
+    }
+
+    .col-rem p {
+      font-size: 1.5rem;
+    }
+    /* end col-rem */
+
+    .btn {
+      display: inline-block;
+      background: #333;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .btn-sm {
+      padding: 0.5em 1em;
+    }
+
+    .btn-md {
+      padding: 1em 2em;
+    }
+
+    .btn-lg {
+      padding: 1.5em 3em;
+    }
+  </style>
+  <body>
+    <div class="length">
+      <h2>Title</h2>
+      <a href="" class="btn btn-sm">Click Me</a>
+      <a href="" class="btn btn-md">Click Me</a>
+      <a href="" class="btn btn-lg">Click Me</a>
+    </div>
+
+    <div class="container">
+      <h1>Typography</h1>
+      <div class="typography">
+        <div class="col col-em">
+          <h2>em</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            facere? Fuga quisquam, earum adipisci repellat nemo dolore libero.
+            Maiores earum veniam nulla. Ullam dolores voluptatum eligendi omnis
+            quibusdam similique possimus dolore quas in et labore nesciunt non
+            perferendis placeat tenetur necessitatibus, commodi, sequi impedit
+            sed, vel facere. Neque, aut? Exercitationem ducimus suscipit
+            asperiores velit? Laboriosam velit, tempora fuga reprehenderit
+            doloremque molestiae eos fugiat dolores nam sunt soluta quam neque
+            aperiam repudiandae aspernatur esse vitae architecto cum rem. Nobis,
+            cupiditate! Possimus esse quaerat provident? A praesentium fugiat
+            cum reiciendis officia nam corrupti voluptas error illo eum veniam
+            sit aut, doloremque nesciunt!
+          </p>
+        </div>
+
+        <div class="col col-rem">
+          <h2>rem</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            eligendi suscipit atque tempora laboriosam consequuntur, officia sed
+            harum, exercitationem blanditiis reprehenderit repellendus esse
+            facilis voluptas eos, ad corporis modi ratione iure similique
+            distinctio mollitia. Illo optio fuga deserunt praesentium iste
+            quibusdam voluptates! Doloribus consequatur fugit repellat?
+            Doloribus eveniet quisquam veritatis natus quo in pariatur debitis
+            distinctio repellat labore ipsam voluptatibus cumque, odit odio
+            nihil libero vitae fugiat voluptas ut assumenda quas consectetur?
+            Asperiores libero architecto laboriosam. Neque, consequuntur
+            laudantium eveniet voluptate ut exercitationem eos illum facilis
+            ipsam. Qui, minus. Fugit sequi iure reiciendis, sint perferendis
+            natus hic dolores rerum qui!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

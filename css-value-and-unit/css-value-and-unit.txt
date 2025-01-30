@@ -1,0 +1,51 @@
+.selector {
+  width: 80px;
+  height: 100px;
+}
+
+// CSS Value
+- Integer
+ Example :
+    Bilangan bulat boleh positif maupun negetif ( 1 or -1 )
+
+- Number
+ Example :
+    Angka tapi boleh pecahan ( 1.2 or 0.3 ), dan 0 nya boleh dihilangkan ( .3 )
+
+- Percentage
+ Example :
+    Memperesentasikan sebagian dari nilai tertentu, % selalu relative terhadap nilai yang lain / parent elementnya ( 10% )
+
+- Dimension
+ Example :
+    Number yang memiliki satuan dibelakangnya
+ Categories : 
+  - angle
+   example :
+    ( 30deg, 0.52333333rad, 33.3grad, 0.08333333turn )
+  - time
+   example :
+    ( 1000ms === 1s )
+  - resolution :
+   example :
+    ( dot per inch(dpi), dot per centimeter(dpcm), dot per pixel(dppx) )
+  - length
+   example :
+    - absolute
+     example :
+      1px = 1/96inch and 96px = 1inch
+      1pt = 1/72inch and 72pt = 1inch
+      1pc = 12pt
+      cm = centimeter
+      10mm = 1cm
+      in = inches
+
+    - relative  
+      %     relatif terhadap ukuran parentnya
+      em    relatif terhadap ukuran font yang sedang digunakan
+      rem   relatif terhadap ukuran font root / html
+      ch    relatif terhadap ukuran karakter 0 dari font yang sedang digunakan
+      vh    relatif terhadap tinggi dari viewport
+      vw    relatif terhadap lebar dari viewport
+      vmin  relatif terhadap dimensi terkecil sebuah viewport
+      vmax  relatif terhadap dimensi terbesar sebuah viewport
