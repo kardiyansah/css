@@ -1,0 +1,155 @@
+/* tip 1 */
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  resize does not apply to the following : inline elements, block elements for which the overflow property is set to visible
+  resize: both;
+} */
+/* end of tip 1 */
+
+/* tip 2 */
+/* body {
+  background-color: #f9f9f9;
+}
+.btn {
+  display: block;
+  border: none;
+  padding: 5rem 8rem;
+  margin: 3rem auto;
+  transition: 300ms;
+  background-color: transparent;
+}
+
+.btn:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -8px -8px 8px white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1) inset, -8px -8px 8px white inset;
+} */
+/* end of tip 2 */
+
+/* tip 3 */
+/* .container {
+  width: 60ch;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid black;
+  display: none;
+}
+
+label {
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+.check {
+  line-height: 2rem;
+  padding: 1em 1.5em;
+  margin: 3rem auto;
+  text-align: center;
+  width: calc(10vmax + 1rem);
+  position: relative;
+}
+
+#show {
+  display: none;
+  z-index: -1;
+}
+
+#show:checked ~ .container {
+  display: block;
+} */
+/* end of tip 3 */
+
+/* tip 4 */
+/* .container-responsive {
+  margin: 3rem auto;
+  background-color: blueviolet;
+  min() always return smallest value
+  max() always return bigger value
+  clamp(min, pref, max) 
+  width: min(800px, 95%);
+} */
+/* end of tip 4 */
+
+/* tip 5 */
+/* body {
+  background: blueviolet url("img/R.jpeg");
+}
+
+.glassmorphism {
+  border-radius: 2em;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  width: min(300px, 90%);
+  height: calc(30vmax + 1rem);
+} */
+/* end of tip 5 */
+
+/* tip 6 */
+/* .button-group {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.btn {
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: blue;
+}
+
+.btn:not(:hover) {
+  background-color: red;
+}
+
+.btn:has(i) {
+  color: white;
+} */
+/* 
+body:has(option[value="dark-mode"]:checked) {
+  background-color: #333;
+  color: #f9f9f9;
+} */
+/* end of tip 6 */
+
+/* tip 7 */
+/* h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 5rem;
+  text-align: center;
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  color: transparent;
+} */
+/* end of tip 7 */
+
+/* tip 8 */
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  width: 300px;
+  margin: 3rem auto;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  scroll-snap-align: center;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: azure;
+  border-radius: 1rem;
+  text-align: center;
+}
+/* end of tip 8 */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Animation</title>
+    <style>
+      .card {
+        box-sizing: border-box;
+        margin: 5rem auto;
+        position: relative;
+        width: 300px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 0.3rem 0.7rem;
+      }
+
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+
+      .card::before,
+      .card::after {
+        content: "";
+        border-radius: 1rem;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: conic-gradient(from var(--angle), transparent 70%, blue);
+        animation: 3s spin linear infinite;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 3px;
+      }
+
+      .card::before {
+        filter: blur(1.5rem);
+        opacity: 0.7;
+      }
+
+      @keyframes spin {
+        from {
+          --angle: 0deg;
+        }
+
+        to {
+          --angle: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Animation Borders</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        commodi. Placeat asperiores distinctio nobis enim, dolores voluptate,
+        quis maiores veniam quam nam iste quibusdam soluta.
+      </p>
+    </div>
+  </body>
+</html>

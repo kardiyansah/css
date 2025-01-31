@@ -1,0 +1,47 @@
+/* tip 1 */
+/* button {
+  padding: 0.5rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  display: block;
+  margin: 15rem auto;
+  font-size: 3rem;
+  border-image: linear-gradient(to right, blueviolet, rgb(240, 57, 87)) 1 1 1 1;
+  border-width: 5px;
+} */
+/* end of tip 1 */
+
+/* tip 2 */
+/* .wrapper {
+  width: min(950px, 100%);
+  margin: 0 auto;
+  columns: 3 300px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-bottom: calc(50px / 3);
+} */
+/* end of tip 2 */
+
+/* tip 3 */
+/* .parent {
+  --size: 300px;
+  height: var(--size);
+  width: var(--size);
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 7rem auto;
+  position: relative;
+}
+
+.child {
+  background: blueviolet;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  inset: 0;
+  margin: auto;
+} */
+/* end of tip 3 */

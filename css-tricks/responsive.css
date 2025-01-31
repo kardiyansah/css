@@ -1,0 +1,28 @@
+/* relative padding */
+/* .container {
+  width: min(300px, 100%);
+  border: 1px solid black;
+  padding: min(3rem, 5%);
+  margin: 1rem auto;
+} */
+/* end of relative padding */
+
+/* responsive font size */
+/* .box {
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(1.8em, calc(3.5vmax + 1rem), 5rem);
+} */
+/* end of responsive font size */
+
+/* responsive images */
+/* img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: red;
+} */
+/* end of responsive images */
